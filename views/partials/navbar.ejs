@@ -1,0 +1,46 @@
+<header class="navbar">
+  <div class="nav-center">
+    <div class="navbar-header">
+      <div class="logo">
+        <a href="/"> <img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <% if (user) {%>
+      <button class="toggle"><i class="fas fa-bars"></i></button>
+      <% } else {%>
+      <button class="small-toggle"><a href="/signup">get started</a></button>
+      <%}%>
+    </div>
+
+    <div>
+      <% if (user) {%>
+      <ul class="nav-links">
+        <li><a href="about">About</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li class="profile">
+          <a href="#"><%= user.username[0]%></a>
+          <ul>
+            <div class="profile-card">
+              <div class="profile-inner"><%= user.username[0]%></div>
+              <div>
+                <h6><%= user.username%></h6>
+                <p><%= user.email%></p>
+              </div>
+              <div class="btn">
+                <button>
+                  <a href="/"><i class="fa fa-home"></i></a>
+                </button>
+                <button>
+                  <a href="logout"><i class="fa fa-sign-out"></i></a>
+                </button>
+              </div>
+            </div>
+          </ul>
+        </li>
+         <li class="profile-logout"><a href="logout"><i class="fa fa-sign-out"> </i>logout</a></a></li>
+      </ul>
+      <% }else {%>
+      <button class="large-toggle"><a href="/signup">get started</a></button>
+      <%}%>
+    </div>
+  </div>
+</header>

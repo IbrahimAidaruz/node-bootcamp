@@ -1,0 +1,67 @@
+.error {
+  width: 1200px;
+  max-width: 80%;
+  margin: 1rem auto;
+  background: white;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 2px 2px 3px #f5f4f4, inset -2px -2px 3px #e0dfdf;
+          box-shadow: inset 2px 2px 3px #f5f4f4, inset -2px -2px 3px #e0dfdf;
+}
+
+.error h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: #72acff;
+}
+
+.error h3 {
+  margin: 6px auto;
+}
+
+.error .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.error .btn button {
+  margin-right: 20px;
+  border: 2px solid #72acff;
+  padding: 3px 20px;
+  border-radius: 20px;
+}
+
+.error .btn button i {
+  margin-right: 10px;
+}
+
+.error .btn button a {
+  color: #72acff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.error .btn button:first-child {
+  background: #72acff;
+}
+
+.error .btn button:first-child a {
+  color: white;
+}
+/*# sourceMappingURL=error.css.map */

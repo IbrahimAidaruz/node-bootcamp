@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/header") -%>
+  <body>
+    <%- include("partials/navbar") -%>
+    <main class="contact">
+      <div class="contact-holder">
+        <div class="contact-news">
+          <h2>World News</h2>
+          <div class="outline"></div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="image-holder">
+            <img src="images/profile.jpg" alt="Profile" />
+          </div>
+        </div>
+        <form class="contact-form">
+          <div>
+            <label for="data">Select a Date:</label>
+            <select id="date" name="date" aria-placeholder="select...">
+              <option value="monday">Monday</option>
+              <option value="sunday">Sunday</option>
+              <option value="friday">Friday</option>
+            </select>
+          </div>
+          <div>
+            <label for="search">Enter the First Keywords:</label>
+            <input type="text" id="searche" />
+          </div>
+          <button>Search</button>
+        </form>
+      </div>
+      <div class="contect-info">
+        <div class="profile">
+          <div><img src="images/profile.jpg" alt="profile" /></div>
+          <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio
+            omnis hic ex repudiandae excepturi quod, magni iste ratione non
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit
+            Recusandaeeaque fugit excepturi iste, quos omnis ducimus Nobis
+            nemoquisquam vel. Lorem ipsum dolor sit amet consectetur
+            adipisicingelit Accusantium aliquid laboriosam nulla earum quasi.
+            Laborumo fficiis dolore praesentium aliquid. Repellendus!
+          </p>
+        </div>
+        <div>
+          <p>
+            adipisci ipsum quasi corrupti illo dignissimos! Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Officia, eligendi! Vero
+            atque, aliquid tempore aliquam mollitia fugiat ratione recusandae.
+            Quae, ratione nisi quidem ducimus
+          </p>
+          <p class="time"><i class="far fa-clock"></i>3 min ago</p>
+        </div>
+      </div>
+    </main>
+
+    <%- include("partials/footer")%>
+  </body>
+</html>

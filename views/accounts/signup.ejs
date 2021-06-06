@@ -1,0 +1,60 @@
+<%- include("../partials/header")-%>
+<body>
+  <%- include("../partials/navbar") -%>
+
+  <div class="form-container">
+    <div class="btn-container">
+      <button class="btn-tab active" data-id="login">
+        <a href="/login">Login</a>
+      </button>
+      <button class="btn-tab" data-id="signup">
+        <a href="/signup">Sign up</a>
+      </button>
+    </div>
+    <form action="" novalidate autocomplete="off">
+      <div class="wraper">
+        <input
+          type="text"
+          placeholder=" "
+          name="username"
+          id="username"
+          class="form_input"
+          required
+        />
+        <label for="username" class="form__label">Username</label>
+        <div class="error username"></div>
+      </div>
+      <div class="wraper">
+        <input
+          type="email"
+          placeholder=" "
+          name="email"
+          id="email"
+          class="form_input"
+          required
+        />
+        <label for="email" class="form__label">Email </label>
+        <div class="error email"></div>
+      </div>
+      <div class="wraper">
+        <input
+          type="password"
+          class="form_input"
+          placeholder=" "
+          name="password"
+          id="password"
+          required
+        />
+        <label for="password" class="form__label">Password</label>
+        <div class="error password"></div>
+      </div>
+
+      <div class="btn">
+        <button type="submit"><i class="fas fa-paper-plane"></i>Sign Up</button>
+      </div>
+    </form>
+  </div>
+
+  <%- include("../partials/footer")-%>
+  <script src="scripts/signup.js"></script>
+</body>

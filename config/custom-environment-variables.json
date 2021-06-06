@@ -1,0 +1,12 @@
+{
+  "database":{
+      "url":"db_url"
+  },
+  "jwt":{
+    "secret":"jwt_secret"
+  },
+  "google":{
+    "clientID":"clientID",
+    "clientSecret":"clientSecret"
+  }
+}

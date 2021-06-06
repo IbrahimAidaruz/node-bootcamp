@@ -1,0 +1,193 @@
+/*   border radius */
+.form-container {
+  width: 250px;
+  margin: 2rem auto;
+  -webkit-box-shadow: inset 2px 2px 3px #ececec, inset -2px -2px 3px #d6d5d5;
+          box-shadow: inset 2px 2px 3px #ececec, inset -2px -2px 3px #d6d5d5;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+label,
+button,
+.error {
+  display: block;
+  font-family: "Jost", sans-serif;
+}
+
+button {
+  font-size: 18px;
+}
+
+.form_input:focus {
+  background: #f6f8f9;
+}
+
+.btn-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  background-color: #72acff;
+  margin-bottom: 20px;
+}
+
+.btn-container button {
+  display: inline-block;
+  -webkit-transition: background 1.5s linear;
+  transition: background 1.5s linear;
+  padding: 5px 20px;
+  color: white;
+}
+
+.btn-container button a {
+  color: white;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.btn-container button:hover, .btn-container button:active {
+  background-color: #52e5ba;
+  border-radius: 10px;
+}
+
+form .wraper {
+  position: relative;
+  margin: 25px auto;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form .wraper .error {
+  color: #52e5ba;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0 6px;
+}
+
+form .wraper input {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 0.35rem;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 0.4rem;
+  background: none;
+  /* Change border when input focus*/
+}
+
+form .wraper input:hover {
+  border-color: #adffff;
+}
+
+form .wraper input:focus {
+  border-color: #52e5ba;
+}
+
+form .wraper label {
+  position: absolute;
+  left: 1rem;
+  top: 0.4rem;
+  padding: 0 0.5rem;
+  color: #0e0b0b;
+  cursor: text;
+  -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: #f6f8f9;
+}
+
+form button[type="submit"] {
+  display: inline-block;
+  -webkit-transition: background 1.5s linear;
+  transition: background 1.5s linear;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: #72acff;
+}
+
+form button[type="submit"] a {
+  color: white;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 20px;
+}
+
+form button[type="submit"]:hover, form button[type="submit"]:active {
+  background-color: #52e5ba;
+  border-radius: 10px;
+}
+
+form i {
+  margin-right: 10px;
+}
+
+.form_input:focus ~ .form__label,
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.social-accounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.social-accounts button {
+  margin: auto 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #72acff;
+  border-radius: 50%;
+  -webkit-transition: background 1.2s ease-in-out;
+  transition: background 1.2s ease-in-out;
+}
+
+.social-accounts button:hover {
+  background-color: #52e5ba;
+}
+
+.social-accounts button a {
+  color: white;
+  font-size: 18px;
+}
+
+@media (min-width: 700px) {
+  .btn-container button a {
+    font-size: 25px;
+  }
+  .form-container {
+    width: 300px;
+  }
+  button {
+    font-size: 20px;
+  }
+  .social-accounts button {
+    margin: auto 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .social-accounts button a {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=form.css.map */

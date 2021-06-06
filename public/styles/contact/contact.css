@@ -1,0 +1,155 @@
+.contact {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact .contact-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  background: white;
+}
+
+.contact .contact-holder .contact-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../../images/background.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  color: white;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.contact .contact-holder .contact-news h2 {
+  margin-bottom: 8px;
+}
+
+.contact .contact-holder .contact-news .image-holder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.contact .contact-holder .contact-news .image-holder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.contact .contact-holder .contact-news div.outline {
+  width: 40px;
+  height: 3px;
+  background-color: #f86e6e;
+}
+
+.contact .contact-holder .contact-form {
+  padding: 2rem 5rem;
+}
+
+.contact .contact-holder .contact-form div {
+  margin-bottom: 20px;
+}
+
+.contact .contact-holder .contact-form input,
+.contact .contact-holder .contact-form select {
+  width: 95%;
+  padding: 0.25rem;
+  margin-top: 6px;
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.contact .contact-holder .contact-form button {
+  background: lightcoral;
+  color: white;
+  padding: 4px 30px;
+  border-radius: 4px;
+}
+
+.contact .contect-info {
+  display: -ms-grid;
+  display: grid;
+  width: auto;
+  padding: 3rem 1rem;
+  margin: auto;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.contact .contect-info p {
+  margin-top: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+.contact .contect-info h4 {
+  margin-top: 6px;
+}
+
+.contact .contect-info .profile div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact .contect-info .profile div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.contact .contect-info .time {
+  color: gray;
+  font-family: "Heebo", sans-serif;
+}
+
+.contact .contect-info .time i {
+  margin-right: 0.7rem;
+}
+
+@media (min-width: 700px) {
+  .contact .contact-holder .contact-form input,
+  .contact .contact-holder .contact-form select {
+    width: 85%;
+  }
+}
+
+@media (min-width: 950px) {
+  .contact .contact-holder {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1120px) {
+  .contact .contact-holder {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .contact .contect-info {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 1100px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

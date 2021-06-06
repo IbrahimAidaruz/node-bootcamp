@@ -1,0 +1,132 @@
+.contact {
+  width: 100%;
+  max-width: 100%;
+  .contact-holder {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1.5rem;
+    background: white;
+    .contact-news {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../../images/background.jpg");
+      background-position: center;
+      background-size: 100% auto;
+      color: white;
+      border-radius: 3px;
+      padding: 1rem;
+      h2 {
+        margin-bottom: 8px;
+      }
+      .image-holder {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid white;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      div.outline {
+        width: 40px;
+        height: 3px;
+        background-color: rgb(248, 110, 110);
+      }
+    }
+    .contact-form {
+      padding: 2rem 5rem;
+
+      div {
+        margin-bottom: 20px;
+      }
+      input,
+      select {
+        width: 95%;
+        padding: 0.25rem;
+        margin-top: 6px;
+        font-size: 100%;
+        font-family: inherit;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid black;
+      }
+      button {
+        background: lightcoral;
+        color: white;
+        padding: 4px 30px;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .contect-info {
+    display: grid;
+    width: auto;
+    padding: 3rem 1rem;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1.5rem;
+    p {
+      margin-top: 0;
+      font-family: "Spartan", sans-serif;
+    }
+    h4 {
+      margin-top: 6px;
+    }
+    .profile div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .time {
+      color: gray;
+      font-family: "Heebo", sans-serif;
+      i {
+        margin-right: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .contact {
+    .contact-holder {
+      .contact-form {
+        input,
+        select {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .contact {
+    .contact-holder {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .contact {
+    .contact-holder {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contect-info {
+      grid-template-columns: repeat(3, 1fr);
+      width: 1100px;
+    }
+  }
+}
